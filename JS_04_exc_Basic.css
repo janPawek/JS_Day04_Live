@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#userInfoDisplay {
+    margin-top: 20px;
+}
+
+.green-text {
+    color: green;
+}
+
+.red-text {
+    color: red;
+}
