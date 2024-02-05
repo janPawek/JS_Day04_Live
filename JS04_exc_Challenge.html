@@ -1,0 +1,57 @@
+<!-- JavaScript JavaScript - Day 04 - Excercises - Challenge
+
+Ex Description:
+
+Many people love games of chance and especially the thrill of  "roll of the dice". For this exercise, create a page with a two-sided layout for two players based on the idea of "roll of the dice".
+
+When the page loads, a prompt method should appear to receive a string (the name for each player), then display their names in the header of the page, for example, "Thomas vs. Martin".
+
+In each half of the layout, place a button that calls a function. This function should create one random number. Next, display the number separately and visually appealing in each player's half, so that the player can see what they "rolled". Once both players have rolled, announce the winner based on the highest score! Do your best to create a rich game-design using CSS or Bootstrap.
+Consider the following programming principles while solving the Challenge:
+
+Use of best practices in semantic elements, code indentation and comments
+Give your page a responsive layout with at least two breakpoints
+Correct use of attributes with functions
+Declaring variables as global or local, when appropriate
+Best practices in naming variables
+Manipulating the DOM with methods like .getElementById() and properties like .innerHTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="JS04_exc_Challenge.css">
+    <title>JavaScript - Day 04 - Excercises - Challenge: Dice game</title>
+</head>
+<body>
+   <h1>JavaScript - Day 04 - Excercises - Challenge: Dice game</h1>
+   <hr>
+   <div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="player-container" id="player1">
+                <h2>Player 1: <span id="player1Name"></span></h2>
+                <button class="btn btn-primary" onclick="rollDice(1)">Roll Dice</button>
+                <div class="dice-result" id="player1Result"></div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="player-container" id="player2">
+                <h2>Player 2: <span id="player2Name"></span></h2>
+                <button class="btn btn-primary" onclick="rollDice(2)">Roll Dice</button>
+                <div class="dice-result" id="player2Result"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-12">
+            <h3 id="winnerAnnouncement"></h3>
+        </div>
+    </div>
+</div>
+
+   <script src="JS04_exc_Challenge.js"></script>
+</body>
+</html>
