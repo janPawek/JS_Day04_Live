@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="JS04_exc_InterEX1.css">
+    <!-- <script defer src="JS04_exc_InterEX1.js"></script> -->
+    <title>JavaScript - Day 04 - Excercises - Intermediate 1 & 2, Interactive Exercise 1</title>
+    
+</head>
+<!-- JavaScript 
+Ex 1
+
+
+Create a Javascript program that will make the Santa Clauses disappear on a click from the following 3x3 matrix. Only the clicked Santa Claus should disappear. -->
+
+<body>
+    <h1>JavaScript - Day 04 - Excercises - Intermediate 1 & 2, Interactive Exercise 1</h1>
+    <div id="matrix-container">
+        <!-- first row -->
+        <img class="others2" src="img/Gift_Box.png" alt="White Gift Box change to Jingle Bells" onclick="changeBoxto(this)">
+        <img class="santa-claus" src="img/santa-claus.png" alt="Santa Claus" onclick="makeSantaDisappear(this)">
+        <img class="others" src="img/Gift_Box.png" alt="White Gift Box" >
+        <!-- Repeat the above three lines two more times to create a 3x3 matrix -->
+
+        <!-- second row -->
+        <img class="others" src="img/Gift_Box.png" alt="White Gift Box">
+        <img class="santa-claus" id="santa2" src="img/santa-claus.png" alt="Santa Claus" onclick="santaAppears(this)">
+        <img class="others2" src="img/Gift_Box.png" alt="White Gift Box change to Jingle Bells" onclick="changeBoxto(this)">
+        <!-- // third row -->
+        <img class="santa-claus" src="img/santa-claus.png" alt="Santa Claus" onclick="makeSantaDisappear(this)">
+        <img class="others" src="img/Gift_Box.png" alt="White Gift Box">
+        <img class="santa-claus" src="img/santa-claus.png" alt="Santa Claus" onclick="makeSantaDisappear(this)">
+        <!-- Add other images or elements as needed -->
+    </div>
+    <br>
+    <br>
+    <button onclick="changeBackgroundColor()">Change Background Color</button>
+    <script src="JS04_exc_InterEX1.js"></script>
+</body>
+</html>
