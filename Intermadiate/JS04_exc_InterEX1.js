@@ -3,10 +3,10 @@ function makeSantaDisappear(santa) {
 }
 // Wichtig ist die Ergänzung .getAttribute, da sonst IMages nur im absoluten eingebaut werden müssen. 1. Klick wechsel von einem (Gift_Box) zu einem anderen (1-2-christmas-bell-png-image.png) Bild, bei weiterem Klick kommt wieder das ursprüngliche Bild (Gift_Box)
 function changeBoxto(Gift_Box) {
-    if(Gift_Box.getAttribute("src") == "/media/img/1-2-christmas-bell-png-image.png") {
-    Gift_Box.src="/media/img/Gift_Box.png"
+    if(Gift_Box.getAttribute("src") == "img/1-2-christmas-bell-png-image.png") {
+    Gift_Box.src="img/Gift_Box.png"
     }
-    else{Gift_Box.src="/media/img/1-2-christmas-bell-png-image.png"};
+    else{Gift_Box.src="img/1-2-christmas-bell-png-image.png"};
 }
 // Zusatz Aufgabe: wenn Santa disappeared (verschwindet), dann soll er bei nochmaligen Klick wiedererscheinen
 let santa2status = true;
